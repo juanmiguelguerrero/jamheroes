@@ -1,7 +1,11 @@
+require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
     siteMetadata: {
-        title: `Remote Engineer`,
-        description: `Directory of remote engineers.`,
+        title: `JAM Heroes`,
+        description: `Directory of awesome JAMstack developers.`,
         author: `@wassimdotco`,
     },
     plugins: [
@@ -31,5 +35,20 @@ module.exports = {
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,
         `gatsby-plugin-postcss`,
+        {
+            resolve: `gatsby-source-airtable`,
+            options: {
+                apiKey: process.env.AIRTABLE_API_KEY,
+                tables: [
+                    {
+                        baseId: `appbxNKaIeYcLrTzc`,
+                        tableName: `users`,
+                        //tableView: `published`,
+                        queryName: `User`,
+                        separateNodeType: true,
+                    },
+                ],
+            },
+        },
     ],
 }

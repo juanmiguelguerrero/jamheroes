@@ -25,10 +25,11 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-            <div>
-                <main>{children}</main>
+            <div class="grid-wrapper fixed w-full h-fulll top-0 bottom-0 left-0 right-0">
+                <div className="grid-lines"></div>
             </div>
+            <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+            <main>{children}</main>
         </>
     )
 }
