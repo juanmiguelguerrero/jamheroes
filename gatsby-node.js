@@ -2,9 +2,10 @@ const path = require(`path`)
 
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
+    const userTemplate = path.resolve(`./src/templates/user.js`)
 
     // Get all profiles
-    const profiles = await graphql(`
+    const users = await graphql(`
         {
             allMarkdownRemark {
                 edges {
@@ -19,16 +20,16 @@ exports.createPages = async ({ graphql, actions }) => {
     `)
 
     // Handle errors
-    if (profiles.errors) {
+    if (users.errors) {
         reporter.panicOnBuild(`Error while running GraphQL query.`)
         return
     }
 
     // Create profiles pages
-    profiles.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    users.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
             path: `u/${node.frontmatter.slug}`,
-            component: path.resolve(`./src/templates/profile.js`),
+            component: userTemplate,
             context: {
                 slug: node.frontmatter.slug,
             },

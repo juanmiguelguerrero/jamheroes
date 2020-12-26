@@ -4,6 +4,8 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import Meta from "../components/userMeta"
+
 const Profile = ({ data }) => {
     const { markdownRemark } = data
     const { frontmatter, html } = markdownRemark
@@ -31,17 +33,11 @@ const Profile = ({ data }) => {
                             {frontmatter.name}
                         </h1>
 
-                        <ul className="sm:flex font-mono font-medium text-white">
-                            <li className="mr-8 capitalize">
-                                {frontmatter.type}
-                            </li>
-                            <li className="mr-8">{frontmatter.location}</li>
-                            <li className="">{frontmatter.link}</li>
-                        </ul>
+                        <Meta user={frontmatter} />
                     </div>
                 </header>
                 <div className="mx-auto max-w-2xl">
-                    <h2 className="mb-2 font-mono text-lg font-bold text-white italic">
+                    <h2 className="mb-2 px-8 font-mono text-lg font-bold text-white italic">
                         {`About ${frontmatter.name}`}
                     </h2>
                     <div

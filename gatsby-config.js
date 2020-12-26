@@ -21,7 +21,7 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `profiles`,
-                path: `${__dirname}/src/profiles`,
+                path: `${__dirname}/src/users`,
             },
         },
         `gatsby-transformer-remark`,

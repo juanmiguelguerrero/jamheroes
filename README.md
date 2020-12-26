@@ -8,9 +8,9 @@ A directory of awesome JAMstack developers & makers in a 80s/retro style design.
 
 Join our growing directory and get more exposure as a JAMstack freelancer or agency by submitting your profile.
 
-1.  **Create a new markdown file in src/profiles.**
+1.  **Create a new markdown file in src/users.**
 
-    You can use <a href="https://github.com/wassim/jamheroes/blob/main/src/profiles/wassim-bourguiba.md">my own profile</a> as a starter.
+    You can use <a href="https://github.com/wassim/jamheroes/blob/main/src/users/wassim-bourguiba.md">my own profile</a> as a starter.
 
 2.  **Submit a PR.**
 
