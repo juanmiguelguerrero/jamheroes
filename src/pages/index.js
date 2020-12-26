@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => (
         <div className="card-grid grid md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto py-20 px-6 w-full max-w-7xl">
             <a
                 className="flex items-center justify-center p-4 font-mono text-sm text-purple-400 hover:text-white border-dashed border border-indigo-700"
-                href=""
+                href="https://github.com/wassim/jamheroes"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Add your profile"

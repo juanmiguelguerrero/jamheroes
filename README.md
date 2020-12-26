@@ -10,7 +10,7 @@ Join our growing directory and get more exposure as a JAMstack freelancer or age
 
 1.  **Create a new markdown file in src/profiles.**
 
-    You can use my own profile as a starter.
+    You can use <a href="https://github.com/wassim/jamheroes/blob/main/src/profiles/wassim-bourguiba.md">my own profile</a> as a starter.
 
 2.  **Submit a PR.**
 
