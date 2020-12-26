@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
                             className="relative text-2xl md:text-3xl text-white"
                             activeClassName="underline"
                             to="/"
-                            title="Jamstack Heroes"
+                            title="JAM Heroes"
                         >
                             <span
                                 className="hidden md:block absolute -top-1 right-0 text-xs"
@@ -30,28 +30,30 @@ const Header = ({ siteTitle }) => (
                     <li className="mr-6 md:mr-0">
                         <Link
                             className="relative text-2xl md:text-3xl text-white"
-                            to="/"
-                            title="Remote Jobs"
+                            activeClassName="underline"
+                            to="/links"
+                            title="Links"
                         >
                             <span
                                 className="hidden md:block absolute -top-1 right-0 text-xs"
                                 aria-hidden="true"
                             >
-                                remote
+                                fresh
                             </span>
-                            <span className="font-heading">Jobs</span>
+                            <span className="font-heading">Links</span>
                             <span
                                 className="hidden md:block absolute -bottom-3 right-0 text-xs"
                                 aria-hidden="true"
                             >
-                                positions
+                                resources
                             </span>
                         </Link>
                     </li>
                     <li className="mr-6 md:mr-0">
                         <Link
                             className="relative text-2xl md:text-3xl text-white"
-                            to="/"
+                            activeClassName="underline"
+                            to="/courses"
                             title="Jamstack Courses"
                         >
                             <span
@@ -72,7 +74,8 @@ const Header = ({ siteTitle }) => (
                     <li className="mr-6 md:mr-0">
                         <Link
                             className="relative text-2xl md:text-3xl text-white"
-                            to="/"
+                            activeClassName="underline"
+                            to="/events"
                             title="Upcoming Events"
                         >
                             <span
@@ -87,8 +90,9 @@ const Header = ({ siteTitle }) => (
                     <li className="mr-6 md:mr-0">
                         <Link
                             className="relative text-2xl md:text-3xl text-white"
-                            to="/"
-                            title="About Jamheroes"
+                            activeClassName="underline"
+                            to="/about"
+                            title="About JAM Heroes"
                         >
                             <span
                                 className="hidden md:block absolute -top-1 right-0 text-xs"
@@ -108,7 +112,8 @@ const Header = ({ siteTitle }) => (
                     <li>
                         <Link
                             className="relative text-2xl md:text-3xl text-white"
-                            to="/"
+                            activeClassName="underline"
+                            to="/contact"
                             title="Contact"
                         >
                             <span className="font-heading">Contact</span>
