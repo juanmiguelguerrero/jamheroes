@@ -3,28 +3,35 @@ const path = require(`path`)
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
 
-    // profiles
+    // Get all profiles
     const profiles = await graphql(`
         {
-            allAirtableUser {
+            allMarkdownRemark {
                 edges {
                     node {
-                        data {
+                        frontmatter {
                             slug
                         }
                     }
                 }
             }
         }
-    `).then(result => {
-        result.data.allAirtableUser.edges.forEach(({ node })=> {
-            createPage({
-                path: `u/${node.data.slug}`,
-                component: path.resolve(`./src/templates/profile.js`),
-                context: {
-                    slug: node.data.slug,
-                },
-            })
+    `)
+
+    // Handle errors
+    if (profiles.errors) {
+        reporter.panicOnBuild(`Error while running GraphQL query.`)
+        return
+    }
+
+    // Create profiles pages
+    profiles.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        createPage({
+            path: `u/${node.frontmatter.slug}`,
+            component: path.resolve(`./src/templates/profile.js`),
+            context: {
+                slug: node.frontmatter.slug,
+            },
         })
     })
 }

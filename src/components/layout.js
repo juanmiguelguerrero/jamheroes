@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -25,10 +18,7 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <div class="grid-wrapper fixed w-full h-fulll top-0 bottom-0 left-0 right-0">
-                <div className="grid-lines"></div>
-            </div>
-            <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+            <Header siteTitle={data.site.siteMetadata?.title || `JAM Heroes`} />
             <main>{children}</main>
         </>
     )

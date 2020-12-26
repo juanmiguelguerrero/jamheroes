@@ -4,15 +4,18 @@ import { Link } from "gatsby"
 const Card = ({ data }) => (
     <Link to={`/u/${data.slug}`} title={data.name}>
         <article className="card relative w-full h-full border border-indigo-700 bg-indigo-900">
-            <div className="card__border absolute w-full h-full border border-indigo-700"></div>
+            <div
+                className="card__border absolute right-0 bottom-0 w-full h-full border border-indigo-700 transform translate-x-2 translate-y-2 transition duration-150 ease-in-out"
+                style={{ zIndex: "-1" }}
+            ></div>
             <header className="flex items-center py-3 px-4">
-                <span className="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-700"></span>
+                <span className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-b from-purple-800 to-purple-600"></span>
 
                 <div className="ml-4">
-                    <h2 className="text-xl font-heading text-indigo-200 leading-none">
+                    <h2 className="font-heading text-xl text-indigo-200 leading-none">
                         {data.name}
                     </h2>
-                    <span className="text-xs font-mono tracking-wider text-indigo-500 uppercase">
+                    <span className="text-sm font-mono text-indigo-500">
                         {data.location}
                     </span>
                 </div>

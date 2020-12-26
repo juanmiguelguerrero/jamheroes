@@ -18,15 +18,14 @@ module.exports = {
                     "Avenir Next",
                     ...defaultTheme.fontFamily.sans,
                 ],
-                mono: [
-                    "JetBrains Mono",
-                    ...defaultTheme.fontFamily.mono,
-                ],
+                mono: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
             },
         },
     },
     variants: {
-        extend: {},
+        extend: {
+            margin: ["last"],
+        },
     },
     plugins: [],
 }

@@ -17,13 +17,21 @@ module.exports = {
                 path: `${__dirname}/src/images`,
             },
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `profiles`,
+                path: `${__dirname}/src/profiles`,
+            },
+        },
+        `gatsby-transformer-remark`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `gatsby-starter-default`,
-                short_name: `starter`,
+                name: `jam-heroes`,
+                short_name: `jamheroes`,
                 start_url: `/`,
                 background_color: `#663399`,
                 theme_color: `#663399`,
@@ -35,20 +43,5 @@ module.exports = {
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,
         `gatsby-plugin-postcss`,
-        {
-            resolve: `gatsby-source-airtable`,
-            options: {
-                apiKey: process.env.AIRTABLE_API_KEY,
-                tables: [
-                    {
-                        baseId: `appbxNKaIeYcLrTzc`,
-                        tableName: `users`,
-                        //tableView: `published`,
-                        queryName: `User`,
-                        separateNodeType: true,
-                    },
-                ],
-            },
-        },
     ],
 }
