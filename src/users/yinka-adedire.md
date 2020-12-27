@@ -1,12 +1,13 @@
 ---
-name: "Yinka Adedire" # required
-slug: "yinka-adedire" # required
-type: "freelancer"       # required
-location: "Nigeria" # required
+name: "Yinka Adedire"
+slug: "yinka-adedire"
+type: "freelancer"
+location: "Nigeria"
+continent: "Africa"
 intro: "JAMStack developer with experiece in Eleventy & GatsbyJs." # required, no more than 140 characters
-website: "https://twitter.com/yinkakun" # required
-twitter: "yinkakun"       # required
-expertise: "ReactJs, VanillaJs, Eleventy, GatsbyJs, SEO" #required
+website: "https://twitter.com/yinkakun"
+twitter: "yinkakun"
+expertise: "ReactJs, VanillaJs, Eleventy, GatsbyJs, SEO"
 ---
 
 I create fast, accessible, intuitive and responsive websites.
