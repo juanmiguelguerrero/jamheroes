@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import PlayButton from "../components/playButton"
+import Sun from "../components/shapes/sun"
+
 import Header from "./header"
 import "./layout.css"
 

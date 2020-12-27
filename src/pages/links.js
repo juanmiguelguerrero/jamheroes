@@ -12,7 +12,7 @@ const Links = () => (
                     <span>Links</span>
                 </h1>
             </div>
-            <div className="page-content font-mono text-lg text-purple-200 leading-loose">
+            <div className="page-content text-lg text-purple-200 leading-loose">
                 <p className="mb-4">
                     Links.
                 </p>

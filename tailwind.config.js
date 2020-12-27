@@ -15,7 +15,6 @@ module.exports = {
             fontFamily: {
                 heading: [
                     "Racing Sans One",
-                    "Avenir Next",
                     ...defaultTheme.fontFamily.sans,
                 ],
                 mono: [

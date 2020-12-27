@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=JetBrains+Mono:ital,wght@0,400;0,500;1,700");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;1,400;1,700&family=Racing+Sans+One&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    @apply font-sans antialiased bg-indigo-900;
+    @apply font-mono antialiased bg-indigo-900;
 }
 
 a,
 button {
-    transition: all .15s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 
 .banner nav ul li a {

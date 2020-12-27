@@ -21,7 +21,7 @@ const Courses = ({ data }) => {
                         <span>Courses</span>
                     </h1>
                 </div>
-                <div className="page-content pb-20 font-mono text-lg text-purple-200 leading-loose">
+                <div className="page-content pb-20 text-lg text-purple-200 leading-loose">
                     <p className="mb-10">
                         A list of hand-picked JAMstack learning materials.
                     </p>

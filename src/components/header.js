@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => (
                             title="JAM Heroes"
                         >
                             <span
-                                className="hidden md:block absolute -top-1 right-0 text-xs"
+                                className="hidden md:block absolute top-0 right-0 text-xs"
                                 aria-hidden="true"
                             >
                                 jam
@@ -35,14 +35,14 @@ const Header = ({ siteTitle }) => (
                             title="Links"
                         >
                             <span
-                                className="hidden md:block absolute -top-1 right-0 text-xs"
+                                className="hidden md:block absolute top-0 right-0 text-xs"
                                 aria-hidden="true"
                             >
                                 fresh
                             </span>
                             <span className="font-heading">Links</span>
                             <span
-                                className="hidden md:block absolute -bottom-3 right-0 text-xs"
+                                className="hidden md:block absolute -bottom-2 right-0 text-xs"
                                 aria-hidden="true"
                             >
                                 resources
@@ -57,14 +57,14 @@ const Header = ({ siteTitle }) => (
                             title="Jamstack Courses"
                         >
                             <span
-                                className="hidden md:block absolute -top-1 right-0 text-xs"
+                                className="hidden md:block absolute top-0 right-0 text-xs"
                                 aria-hidden="true"
                             >
                                 learn
                             </span>
                             <span className="font-heading">Courses</span>
                             <span
-                                className="hidden md:block absolute -bottom-3 right-0 text-xs"
+                                className="hidden md:block absolute -bottom-2 right-0 text-xs"
                                 aria-hidden="true"
                             >
                                 jamstack
@@ -79,7 +79,7 @@ const Header = ({ siteTitle }) => (
                             title="Newslettter"
                         >
                             <span
-                                className="hidden md:block absolute -top-1 right-0 text-xs"
+                                className="hidden md:block absolute top-0 right-0 text-xs"
                                 aria-hidden="true"
                             >
                                 hot
@@ -95,14 +95,14 @@ const Header = ({ siteTitle }) => (
                             title="About JAM Heroes"
                         >
                             <span
-                                className="hidden md:block absolute -top-1 right-0 text-xs"
+                                className="hidden md:block absolute top-0 right-0 text-xs"
                                 aria-hidden="true"
                             >
                                 more
                             </span>
                             <span className="font-heading">About</span>
                             <span
-                                className="hidden md:block absolute -bottom-3 right-0 text-xs"
+                                className="hidden md:block absolute -bottom-2 right-0 text-xs"
                                 aria-hidden="true"
                             >
                                 jamheroes
@@ -119,7 +119,7 @@ const Header = ({ siteTitle }) => (
                         >
                             <span className="font-heading">Fork</span>
                             <span
-                                className="hidden md:block absolute -bottom-3 right-0 text-xs"
+                                className="hidden md:block absolute -bottom-2 right-0 text-xs"
                                 aria-hidden="true"
                             >
                                 me

@@ -14,7 +14,7 @@ const Meta = ({ user }) => {
     }
 
     return (
-        <ul className="sm:flex font-mono font-medium text-white">
+        <ul className="sm:flex text-white">
             <li className="flex items-center mb-2 md:mb-0 mr-8">
                 {user.type == "freelancer" ? <UserIcon /> : <UsersIcon />}
                 <span className="ml-2 capitalize">{user.type}</span>

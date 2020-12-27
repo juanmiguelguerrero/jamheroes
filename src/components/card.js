@@ -12,15 +12,15 @@ const Card = ({ data }) => (
                 <span className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-b from-purple-800 to-purple-600"></span>
 
                 <div className="ml-4">
-                    <h2 className="font-heading text-xl text-indigo-200 leading-none">
+                    <h2 className="font-bold text-lg text-indigo-200 italic leading-none">
                         {data.name}
                     </h2>
-                    <span className="text-sm font-mono text-indigo-500">
+                    <span className="text-sm text-indigo-500">
                         {data.location}
                     </span>
                 </div>
             </header>
-            <div className="font-mono">
+            <div>
                 <span className="block py-1 px-4 w-full text-xs font-bold text-indigo-200 italic tracking-wide uppercase bg-gradient-to-r from-indigo-700 to-pink-600">
                     {data.type}
                 </span>
