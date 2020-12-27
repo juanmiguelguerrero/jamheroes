@@ -110,20 +110,21 @@ const Header = ({ siteTitle }) => (
                         </Link>
                     </li>
                     <li>
-                        <Link
+                        <a
                             className="relative text-2xl md:text-3xl text-white"
-                            activeClassName="underline"
-                            to="/contact"
-                            title="Contact"
+                            href="https://github.com/wassim/jamheroes"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="Fork this project"
                         >
-                            <span className="font-heading">Contact</span>
+                            <span className="font-heading">Fork</span>
                             <span
                                 className="hidden md:block absolute -bottom-3 right-0 text-xs"
                                 aria-hidden="true"
                             >
                                 me
                             </span>
-                        </Link>
+                        </a>
                     </li>
                 </ul>
             </nav>

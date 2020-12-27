@@ -37,7 +37,7 @@ const Profile = ({ data }) => {
                     </div>
                 </header>
                 <div className="mx-auto max-w-2xl">
-                    <h2 className="mb-2 px-8 font-mono text-lg font-bold text-white italic">
+                    <h2 className="mb-2 font-mono text-lg font-bold text-white italic">
                         {`About ${frontmatter.name}`}
                     </h2>
                     <div
@@ -61,7 +61,7 @@ const Profile = ({ data }) => {
                 )}
                 <footer>
                     <a
-                        className="flex items-center justify-center mx-auto p-4 w-80 font-mono text-purple-200 border border-indigo-700 hover:text-white"
+                        className="flex items-center justify-center mx-auto mt-32 p-4 w-80 font-mono text-white bg-pink-500 transform -rotate-6"
                         href={frontmatter.website}
                         target="_blank"
                         rel="noopener noreferrer"
