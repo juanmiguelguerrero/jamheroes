@@ -7,10 +7,12 @@ import LinkIcon from "../components/icons/link"
 
 const Meta = ({ user }) => {
     const urlDomain = url => {
-        let a = document.createElement("a")
-        a.href = url
+        if (typeof document !== "undefined") {
+            let a = document.createElement("a")
+            a.href = url
 
-        return a.hostname
+            return a.hostname
+        }
     }
 
     return (
