@@ -75,16 +75,16 @@ const Header = ({ siteTitle }) => (
                         <Link
                             className="relative text-2xl md:text-3xl text-white"
                             activeClassName="underline"
-                            to="/events"
-                            title="Upcoming Events"
+                            to="/newsletter"
+                            title="Newslettter"
                         >
                             <span
                                 className="hidden md:block absolute -top-1 right-0 text-xs"
                                 aria-hidden="true"
                             >
-                                upcoming
+                                hot
                             </span>
-                            <span className="font-heading">Events</span>
+                            <span className="font-heading">Newsletter</span>
                         </Link>
                     </li>
                     <li className="mr-6 md:mr-0">
